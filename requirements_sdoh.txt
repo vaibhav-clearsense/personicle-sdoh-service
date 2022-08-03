@@ -1,0 +1,12 @@
+numpy
+pandas
+sqlalchemy
+Flask
+gunicorn
+pandarallel
+json5
+datetime
+databases
+pydantic
+asyncpg
+psycopg2
