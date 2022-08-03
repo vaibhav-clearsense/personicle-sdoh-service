@@ -24,13 +24,6 @@ pd.set_option('display.max_colwidth', None)
 
 
 
-#zip1  = request.args.get('zip',type=str , default='')
-#cat  = request.args.get('category',type=str , default='')
-
-#subcat  = request.args.get('label',type=str , default='')
-# te  = request.args.get('endtime',type=str , default='')
-# freq  = request.args.get('freq',type=str , default='')
-
 df=pd.read_csv('healthinsurance_sdoh.csv',encoding="utf8")
 
 df.rename(columns={'Label (Grouping)':'label'},inplace=True)

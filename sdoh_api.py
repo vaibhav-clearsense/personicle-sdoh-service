@@ -67,11 +67,7 @@ def request_page():
         
         min_max2=min_max[min_max.category==cat].copy()
         
-        #print("dtypes:::",min_max2,min_max2.dtypes)
-        
-        #print('subcat dtypes:::::',cat,type(cat),subcat,type(subcat))
-        
-       # print('min_max2::::',min_max2)
+       
 
         for i in range(len(min_max2)):
                         
@@ -85,27 +81,21 @@ def request_page():
     def final_data(zip1,cat,subcat):
         
         
-        #try:
     
         
         if cat in ('age','hh income') :
             
-            #print('loop entry')
-            print('subcat is:::', subcat)
 
             cd1=((df_temp.category==cat)&(df_temp.label==det_range(cat,subcat)))
  
         
-#        except TypeError:
-            #print(e)
+
             
         else:
             
-            #print("This variable is not numeric hence adding categorical matching", subcat)
             
             cd1=((df_temp.category==cat)&(df_temp.label==subcat))
             
-            #print('cd exception head::::::',cd1.head())
 
 
             
@@ -117,7 +107,6 @@ def request_page():
             
     
         
-#    cd1=((df_temp.category==cat)&(df_temp.label==subcat))
         
     df_final=final_data(zip1,cat,subcat)
         
